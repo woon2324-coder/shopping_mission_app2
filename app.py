@@ -39,7 +39,7 @@ if st.session_state.stage == 'start':
     if st.button("쇼핑 시작하기"):
         st.session_state.budget = budget_options[selected_mission]
         st.session_state.stage = 'shopping'
-        st.experimental_rerun()
+        st.rerun()
 
 # -----------------------------
 # 2. Shopping Screen
@@ -86,7 +86,7 @@ elif st.session_state.stage == 'shopping':
 
     if st.button("결과보기"):
         st.session_state.stage = 'result'
-        st.experimental_rerun()
+        st.rerun()
 
 # -----------------------------
 # 3. Result Screen
@@ -115,4 +115,4 @@ elif st.session_state.stage == 'result':
     if st.button("처음으로 돌아가기"):
         st.session_state.stage = 'start'
         st.session_state.cart = []
-        st.experimental_rerun()
+        st.rerun()
