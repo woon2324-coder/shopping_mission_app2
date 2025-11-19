@@ -1,0 +1,11 @@
+streamlit>=1.22
+pandas>=1.5
+Pillow>=9.0
+matplotlib>=3.6
+numpy>=1.24
+# Optional: for advanced image/export features
+# streamlit-drawable-canvas
+# pdfkit (with wkhtmltopdf) or imgkit if you need HTML -> image/pdf conversion
+
+
+# If you plan to deploy on Streamlit Community Cloud, these should be sufficient.
